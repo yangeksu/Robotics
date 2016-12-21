@@ -1,0 +1,7 @@
+<launch>
+
+  <node pkg="beginner_tutorials" name="talker" type="talker" output="screen"/>
+#type属性是可执行文件名，在CMakeLists.txt文件中进行了定义；name属性是在源文件中初始化的节点名，name中的值会把源文件中的初始值覆盖掉。当源文件中有打印定义时，需要添加output属性才能显示
+  <node pkg="beginner_tutorials" name="listener" type="listener" output="screen"/>
+
+</launch>
